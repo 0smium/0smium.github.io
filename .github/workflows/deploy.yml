@@ -34,7 +34,7 @@ jobs:
       - name: Generate Content from Markdown
         run: |
           npm install gray-matter glob --no-save
-          node scripts/generate-content.js
+          node scripts/generate-content.cjs
 
       - name: Build
         run: npm run build
